@@ -1,0 +1,27 @@
+{
+  "name": "funnytown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "browser.js",
+  "dependencies": {
+    "browserify": "^7.1.0",
+    "domready": "^1.0.7",
+    "browserify-shim": "^3.8.1",
+    "emoticons": "^0.1.6",
+    "snapsvg": "^0.3.0"
+  },
+  "devDependencies": {
+    "browserify-shim": "^3.8.1"
+  },
+  "browserify":{
+      "transform":["browserify-shim"]
+    },
+  "browserify-shim":{
+      "Snap":"global:Snap"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
